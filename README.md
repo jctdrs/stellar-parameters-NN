@@ -18,3 +18,6 @@ Development in astronomical observation technology and the emergence of large-sk
 
 It is possible to determine the wavelengths which the neural network has found to be the most indicative to each stellar parameter. This can be done by calculating the partial derivatives of each of the ouputs (Teff, logg, [Fe/H], vsin(i)) with respect to every input wavelength of the spectrum. This is the greatest indicative of the success of this technique as it reflects physical dependencies inferred from the data. For exmaple, the for the vsini theJacobian of the model is visualized and clearly shows the strong dependency of vsini to the Hydrogen Balmer line at 4860A, the FeII line from 4500A to 4530A, the magnesium triplet at 4480A, and different weak metallic lines as seen in the image below. 
 ![vsini](images/vsini_jac.png)
+
+The same analysis could be done with respect to all other stellar parameters. For example, the below is the Jacobian associated with the effective temperature Teff. 
+![teff](images/teff_jac.png)
