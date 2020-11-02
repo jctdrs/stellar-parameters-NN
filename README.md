@@ -8,6 +8,7 @@ Development in astronomical observation technology and the emergence of large-sk
 ![label](images/label_grid.png)
 
 3. `pre_processing.py` standarizes the label datasets using the individual means and standard deviations corresponding to each label. Shuffles the entire datasets, stores them in a new h5py database file containing the shuffled spectra and standarized labels together with the individual mean and standard deviations. The mean and standard deviations are stored so that re-standarization can be performed in the testing phase
+![spectrum](images/Noise0.png)
 
 4. `train.py` creates a network composed of two 1-dimensional convolutional layers, 1-dimensional maxpooling layers, and two dense layers linearily stacked in Sequential mode. The model is optimized by the first-order adaptive gradient-based optimization scheme ADAM equipped with EarlyStopping and ReduceLRonPlateau callbacks
 
